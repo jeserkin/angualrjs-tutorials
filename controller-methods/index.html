@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS Tutorials - Defining a Method on the Scope</title>
+	<link rel="stylesheet" href="/public/vendor/bootstrap/3.1.1/css/bootstrap.css" />
+	<script src="/public/vendor/angular/1.2.9/angular.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" style="margin:10px;">
+
+		<div ng-controller="FirstCtrl">
+			<input type="text" ng-model="data.message" />
+			<h1>{{ data.message }}</h1>
+		</div>
+
+		<div ng-controller="SecondCtrl">
+			<input type="text" ng-model="data.message" />
+			<h1>{{ reversedMessage( data.message ) }}</h1>
+		</div>
+
+	</div>
+</body>
+</html>
