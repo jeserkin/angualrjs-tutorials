@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS Tutorials - Binding</title>
+	<link rel="stylesheet" href="/public/vendor/bootstrap/3.1.1/css/bootstrap.css" />
+	<script src="/public/vendor/angular/1.2.9/angular.js"></script>
+</head>
+<body>
+	<div ng-app style="margin:10px;">
+		<input type="text" ng-model="data.message" />
+		<h1>{{ data.message + " world" }}</h1>
+		<div class="{{ data.message }}">
+			Wrap me with a bootstrap component
+		</div>
+	</div>
+</body>
+</html>
